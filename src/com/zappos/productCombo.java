@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import com.zappos.productDetails;
 
 public class productCombo{
-	private ArrayList<productDetails> comboProducts;		//prices to sort, etc.
-	private double sum;							//sum of the prices
-	private double idealTotal; 					//total prices should be near
-	private double closeness;					//how close sum is to total
-	private final double TOL = Math.pow(10, -7);//tolerance for comparing doubles
+	private ArrayList<productDetails> comboProducts;		
+	private double sum;						
+	private double idealTotal; 					
+	private double closeness;					
+	private final double TOL = Math.pow(10, -7);
 	
 
 	public productCombo(ArrayList<productDetails> productsForCombo, double total)
@@ -96,7 +96,7 @@ public class productCombo{
 	
 	public String toString() 
 	{
-		String toReturn = "Products with sum $" + sum + "\n";
+		String toReturn = "items with total $" + sum + "\n";
 		
 		for(int i = 0; i < comboProducts.size(); i ++) 
 		{
